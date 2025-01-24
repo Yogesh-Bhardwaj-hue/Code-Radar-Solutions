@@ -1,8 +1,8 @@
 #include <stdio.h>
-#import math
+#import <math.h>
 int main(){
     float var;
-    float pi = 3.14
+    double pi = M_pi
     scanf("%f",&var);
     printf("Area: %.2f",var*pi);
     return 0;
