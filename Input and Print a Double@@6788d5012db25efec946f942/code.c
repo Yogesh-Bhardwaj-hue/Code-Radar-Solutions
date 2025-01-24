@@ -2,7 +2,7 @@
 
 int main(){
     double var;
-    scanf("%f",&var);
-    printf("You entered: %f",var);
+    scanf("%lf",&var);
+    printf("You entered: %lf",var);
     return 0;
 }
