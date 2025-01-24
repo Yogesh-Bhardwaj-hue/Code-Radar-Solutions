@@ -1,5 +1,5 @@
 #include <stdio.h>
-#import <math.h>
+#include <math.h>
 int main(){
     float var;
     double pi = M_pi;
