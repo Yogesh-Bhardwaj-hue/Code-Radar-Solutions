@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main(){
-    int a;
-    scanf("%d",&a);
-    if(a<=0){
-        Printf("Freezing");
+    int temperature;
+    scanf("%d",&temperature);
+    if(temperature<=0){
+        printf("Freezing");
     }
-    else if(a>0){
+    else{
         printf("Above Freezing");
     }
     return 0;
