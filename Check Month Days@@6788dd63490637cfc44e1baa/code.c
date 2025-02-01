@@ -12,7 +12,7 @@ int main(){
     else if(n==1 || n==3 || n==5 || n==7 || n==9 || n==11){
         printf("31");
     }
-    else if(n<=0 && n>12){
+    else if(n<=0 || n>12){
         printf("Invalid month");
     }
     return 0;
