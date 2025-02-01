@@ -2,8 +2,8 @@
 int main(){
     int a,b;
     scanf("%d %d",&a,&b);
-    int c = a*a;
-    if(b==c){
+    
+    if(b==pow(a,2)){
         printf("Yes");
     }
     else{
