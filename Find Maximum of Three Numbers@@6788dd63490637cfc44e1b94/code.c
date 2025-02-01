@@ -11,8 +11,14 @@ int main(){
     else if(c>a && c>b){
         printf("%d",c);
     }
-    else if(a==b==c){
+    else if(a>b && a==c){
         printf("%d",a);
+    }
+    else if(b>c && a==b){
+        printf("%d",b);
+    }
+    else if(a>c && b==c){
+        printf("%d",c);
     }
     return 0;
     }
