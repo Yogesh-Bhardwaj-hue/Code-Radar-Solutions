@@ -6,10 +6,10 @@ int main(){
         printf("28");
 
     }
-    else if( n==4 || n==6 ||n==9 || n==10 || n==12){
+    else if( n==4 || n==6 ||n==9 || n==11 ){
         printf("30");
     }
-    else if(n==1 || n==3 || n==5 || n==7 || n==8 || n==11){
+    else if(n==1 || n==3 || n==5 || n==7 || n==8 || n==10 || n==12){
         printf("31");
     }
     else if(n<=0 || n>12){
