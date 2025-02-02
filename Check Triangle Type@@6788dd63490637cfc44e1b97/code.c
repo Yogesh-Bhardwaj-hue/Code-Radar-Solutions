@@ -3,7 +3,7 @@ int main(){
     int a,b,c;
     scanf("%d %d %d",&a,&b,&c);
     if(a+c<b || a+b<c || b+c<a){
-        printf("Invalid Triangle")
+        printf("Invalid Triangle");
     }
     if(a==b && a==c && b==c ){
         printf("Equilateral");
