@@ -13,7 +13,7 @@ int main(){
     }
   
     else if(a!=b && b!=c && c!= a) {
-        printf("scalene");
+        printf("Scalene");
     }
     
     return 0;
