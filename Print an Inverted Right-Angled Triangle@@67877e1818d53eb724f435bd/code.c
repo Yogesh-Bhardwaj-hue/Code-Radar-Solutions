@@ -1,5 +1,5 @@
 #include <stdio.h>
-#incldue <conio.h>
+#include <conio.h>
 int main(){
     int i,j,n;
     scanf("%d",&n);
