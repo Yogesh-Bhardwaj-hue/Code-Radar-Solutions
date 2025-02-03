@@ -2,7 +2,7 @@
 int main(){
     char character;
     if(character == "aeiouAEIOU"){
-        printf("Vowel")
+        printf("Vowel");
     }
     else if(character == "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"){
         printf("Consonant");
