@@ -4,17 +4,21 @@ int main(){
    char c;
    scanf("%d %d",&a,&b);
    scanf(" %c",&c);
-   if(c=='+'){
+   
+   return 0;
+   switch(c){
+    case '+' : 
     printf("%d",a+b);
-   } 
-   else if(c=='-'){
+    break;
+    case '-' :
     printf("%d",a-b);
-   }
-   else if(c=='*'){
+    break;
+    case '*' :
     printf("%d",a*b);
-   }
-   else if(c=='/'){
+    break;
+    case '/' :
     printf("%d",a/b);
+    break;
    }
    return 0;
 }
