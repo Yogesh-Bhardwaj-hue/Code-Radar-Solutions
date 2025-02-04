@@ -1,9 +1,8 @@
 #include <stdio.h>
 int main(){
     char a[100], b[100];
-    scanf("%99[^\n]", a);
-    getchar();
-    scanf("%99[^\n]", b);    
-    printf("You entered: %s and %s",a,b);
+    scanf("%s %s",a,b);
+    printf("You entered: %s and %s\n",a,b);
     return 0;
+
 }
