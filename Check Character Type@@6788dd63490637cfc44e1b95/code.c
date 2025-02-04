@@ -1,17 +1,12 @@
 #include <stdio.h>
 int main(){
-    char character;
-    if(character == "aeiouAEIOU"){
+    char a;
+    scanf("%c",&a);
+    if(a=='a' || a== 'e' || a=='i' || a=='o' || a=='u'){
         printf("Vowel");
     }
-    else if(character == "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"){
-        printf("Consonant");
-    }
-    else if(character == "0123456789"){
-        printf("Digit");
-    }
     else{
-        printf("Special Character");
+        printf("Consonant");
     }
     return 0;
 }
