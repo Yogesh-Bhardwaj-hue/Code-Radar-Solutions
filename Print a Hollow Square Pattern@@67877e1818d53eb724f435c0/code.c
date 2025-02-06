@@ -6,9 +6,7 @@ int main(){
         if(i==n){
             printf("*");
         }
-        else{
-            printf("*");
-        }
+        
         for(int j=1; j<= n ; j++){
             if(j==n){
                 printf("*");
