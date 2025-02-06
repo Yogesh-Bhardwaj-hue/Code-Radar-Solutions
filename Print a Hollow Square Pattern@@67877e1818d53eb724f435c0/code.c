@@ -7,14 +7,14 @@ int main(){
             printf("*");
         }
         else{
-            printf(" ");
+            printf("*");
         }
         for(int j=1; j<= n ; j++){
             if(j==n){
                 printf("*");
             }
             else{
-                printf("*");
+                printf(" ");
             }
         }
         printf("\n");
