@@ -4,12 +4,12 @@ int main(){
     scanf("%d",&N);
     for(int i = 1; i<= N;i++){
         for(int j = 1; j < N; j++){
-            printf("");
+            printf(" ");
         }
         for(int k = 1; k <= (2*i - 1); k++){
             printf("*");
         }
-        printf("\n");
+        printf(" \n");
     }
     for(int i = N - 1; i>=1 ; i--){
         for(int j = N; j > i; j--){
