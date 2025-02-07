@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-     n;
+     int n;
     scanf("%d",&n);
     for(it i = 1; i<= n; i++){
         for(char j = 'A'; j< 'A' + i; j++){
