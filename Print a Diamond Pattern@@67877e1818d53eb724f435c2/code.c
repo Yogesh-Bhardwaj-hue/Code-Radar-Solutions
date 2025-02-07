@@ -7,10 +7,10 @@ int main(){
             printf(" ");
         }
     
-    for(int k = 1; j <= (2*i - 1); k++){
-        printf("*");
-    }
-    printf("\n");
+        for(int k = 1; j <= (2*i - 1); k++){
+            printf("*");
+        }
+        printf("\n");
     }
 
     for(int i = N-1; i>= 1; i--){
