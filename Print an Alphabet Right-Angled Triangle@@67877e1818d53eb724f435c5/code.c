@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+     n;
+    scanf("%d",&n);
+    for(it i = 1; i<= n; i++){
+        for(char j = 'A'; j< 'A' + i; j++){
+            printf("%c",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
