@@ -1,12 +1,12 @@
 #include <stdio.h>
 int main(){
-    int n;
+    int n ;
     scanf("%d",&n);
-    for(i<=n){
-        int a,b;
-        char c;
-        scanf("%d %d %c",&a,&b,&c);
-            printf("Roll Number: %d,Name: %c,Marks: %d",a,b,c);
+    for(int i=0 ; i<n ; i++){
+        int rollnumber,marks;
+        char name[100];
+        scanf("%d %d %s",&rollnumber,&,marksname);
+            printf("Roll Number: %d,Name: %s,Marks: %d",rollnumber,marks,name);
     }
     return 0;
 }
