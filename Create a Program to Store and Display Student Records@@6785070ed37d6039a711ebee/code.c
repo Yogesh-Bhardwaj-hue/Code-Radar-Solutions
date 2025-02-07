@@ -6,7 +6,7 @@ int main(){
         int rollnumber,marks;
         char name[100];
         scanf("%d %d %s",&rollnumber,&marks,name);
-            printf("Roll Number: %d,Name: %s,Marks: %d",rollnumber,marks,name);
+            printf("Roll Number: %d, Name: %s, Marks: %d",rollnumber,name,marks);
     }
     return 0;
 }
