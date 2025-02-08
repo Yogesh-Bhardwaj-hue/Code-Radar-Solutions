@@ -1,12 +1,21 @@
-#include <stdio.h>
-int main(){
-    int n ;
-    scanf("%d",&n);
-    for(int i=0 ; i<n ; i++){
-        int rollnumber,marks;
-        char name[100];
-        scanf("%d %d %s",&rollnumber,&marks,name);
-            printf("Roll Number: %d, Name: %s, Marks: %d\n",rollnumber,name,marks);
-    }
-    return 0;
-}
+
+#include <stdio.h>  
+
+int main() {  
+    int n;  
+  
+    scanf("%d", &n);    
+    int rollnumber[n];  
+    int marks[n];  
+    char name[n][100];  
+    for (int i = 0; i < n; i++) {  
+         
+        scanf("%d %d %s", &rollnumber[i], &marks[i], name[i]);  
+    } 
+    printf("\nStudent Details:\n");  
+    for (int i = 0; i < n; i++) {  
+        printf("Roll Number: %d, Name: %s, Marks: %d\n", rollnumber[i], name[i], marks[i]);  
+    }  
+
+    return 0;  
+}  
