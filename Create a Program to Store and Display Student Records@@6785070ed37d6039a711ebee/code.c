@@ -11,8 +11,7 @@ int main() {
     for (int i = 0; i < n; i++) {  
          
         scanf("%d %d %s", &rollnumber[i], &marks[i], name[i]);  
-    } 
-    printf("\nStudent Details:\n");  
+    }   
     for (int i = 0; i < n; i++) {  
         printf("Roll Number: %d, Name: %s, Marks: %d\n", rollnumber[i], name[i], marks[i]);  
     }  
