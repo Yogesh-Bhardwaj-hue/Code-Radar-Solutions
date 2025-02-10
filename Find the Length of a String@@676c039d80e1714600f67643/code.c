@@ -5,6 +5,6 @@ int  main(){
     scanf("[^\n]",str);
     int len = strlen(str);
     
-    printf("%d",len);
+    printf("%d\n",len);
     return 0;
 }
