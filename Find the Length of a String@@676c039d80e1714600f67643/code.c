@@ -3,10 +3,7 @@
 int  main(){
     char str[100];
     scanf("[^\n]",str);
-    int len = strlen(str);
-     if (strcmp(str, " ") == 0) {  
-        len++;  
-    }  
+    int len = strlen(str); 
     printf("%d",len);
     return 0;
 }
