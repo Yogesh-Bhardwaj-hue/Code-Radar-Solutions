@@ -4,9 +4,9 @@ int  main(){
     char str[100];
     scanf("%s",str);
     int len = strlen(str);
-    if(str == " "){
-        len++;
-    }
+     if (strcmp(str, "") == 0) {  
+        len++;  
+    }  
     printf("%d",len);
     return 0;
 }
