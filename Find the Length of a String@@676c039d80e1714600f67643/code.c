@@ -4,7 +4,7 @@ int  main(){
     char str[100];
     scanf("%s",str);
     int len = strlen(str);
-     if (strcmp(str, " ") == 1) {  
+     if (strcmp(str, " ") == " ") {  
         len++;  
     }  
     printf("%d",len);
