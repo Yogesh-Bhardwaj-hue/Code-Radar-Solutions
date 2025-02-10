@@ -12,7 +12,7 @@ int main() {
     for (int i = 0; i < t; i++) {  
         int num;  
         scanf("%d", &num);   
-        printf("%d\n", isPrime(num)); 
+        printf("%d", isPrime(num)); 
     }    
     return 0;  
 }
