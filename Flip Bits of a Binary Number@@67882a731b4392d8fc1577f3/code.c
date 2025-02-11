@@ -1,7 +1,6 @@
 #include <stdio.h>  
 int main() {  
-    int number;    
-    printf("Enter a single integer: ");  
+    int number;      
     scanf("%d", &number);  
     int flippedNumber = ~number;
     printf("%d\n", flippedNumber);  
