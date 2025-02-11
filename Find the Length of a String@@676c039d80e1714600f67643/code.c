@@ -1,9 +1,11 @@
-#include <stdio.h>
-#include <string.h>
-int  main(){
-    char str[100];
-    scanf("99%s",str);
-    int len = strlen(str); 
-    printf("%d",len);
-    return 0;
+#include <stdio.h>  
+int main() {  
+    char str[100];  
+    scanf("%99s", str);   
+    int len = 0; 
+    while (str[len] != '\0') {  
+        len++;  
+    }  
+    printf("%d\n", len); // Print the length  
+    return 0;  
 }
