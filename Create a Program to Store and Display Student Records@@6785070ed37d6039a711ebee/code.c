@@ -7,12 +7,10 @@ struct Student {
 };  
 
 int main() {  
-    int N;  
-    printf("Enter the number of students: ");  
+    int N;   
     scanf("%d", &N);  
     struct Student students[N];   
-    for (int i = 0; i < N; i++) {  
-        printf("Enter roll number, name and marks of student %d: ", i + 1);  
+    for (int i = 0; i < N; i++) {   
         scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);  
     }  
 
