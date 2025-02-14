@@ -1,24 +1,26 @@
-
 #include <stdio.h>  
 
-int main() {  
-    int n;  
-  
-    scanf("%d", &n);    
-    int rollnumber[n];  
-    int marks[n];  
-    char name[n][100];  
+struct Student {  
+    int rollNumber;  
+    char name[50];  
+    float marks;  
+};  
 
-    for (int i = 0; i < n; i++) {  
-        printf("Enter Roll Number, Marks, and Name for student %d: ", i + 1);  
-        scanf("%d %d %s", &rollnumber[i], &marks[i], name[i]);  
+int main() {  
+    int N;  
+    printf("Enter the number of students: ");  
+    scanf("%d", &N);  
+    struct Student students[N];   
+    for (int i = 0; i < N; i++) {  
+        printf("Enter roll number, name and marks of student %d: ", i + 1);  
+        scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);  
     }  
 
-    
-    printf("\nStudent Details:\n");  
-    for (int i = 0; i < n; i++) {  
-        printf("Roll Number: %d, Name: %s, Marks: %d\n", rollnumber[i], name[i], marks[i]);  
+ 
+    for (int i = 0; i < N; i++) {  
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n",   
+               students[i].rollNumber, students[i].name, students[i].marks);  
     }  
 
     return 0;  
-}  
+}
