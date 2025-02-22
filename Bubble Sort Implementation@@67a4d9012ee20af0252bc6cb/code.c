@@ -19,8 +19,8 @@ int main() {
         scanf("%d", &arr[i]);
     }
     bubblesort(arr, n);
-    for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+    printArray(arr,n);
+
     }
     
     return 0;
