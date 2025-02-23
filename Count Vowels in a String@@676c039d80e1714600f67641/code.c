@@ -8,8 +8,9 @@ int main() {
         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {  
             count++;  
         }
-        printf("%d", count);   
-    }   
+         
+    }  
+     printf("%d", count);  
      
 
     return 0;  
