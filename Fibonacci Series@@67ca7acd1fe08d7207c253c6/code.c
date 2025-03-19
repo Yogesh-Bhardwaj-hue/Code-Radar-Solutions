@@ -7,9 +7,8 @@ void Fibo(int *a, int *b, int *c) {
 }
 
 int main() {
-    int a, b, c, n;
+    int a = 0, b = 1, c, n;
     scanf("%d %d", &n);
-    scanf("%d", &a,&b);
     for (int i = 2; i < n; i++) { 
         Fibo(&a, &b, &c);
         printf(" %d", c);
