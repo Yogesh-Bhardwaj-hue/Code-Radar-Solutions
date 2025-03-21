@@ -8,10 +8,7 @@ int main() {
     for (int i = 0; i <= n - 1; i++) {
         scanf("%d", &arr[i]); 
     }
-    for (int i = 0; i <= n - 1; i++) {
-        printf("%d ", arr[i]); 
-    }
-    printf("\n"); 
+
 
     if (n % 2 == 0) {
         int mid1 = arr[n / 2 - 1]; 
