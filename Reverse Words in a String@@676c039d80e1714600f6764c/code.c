@@ -19,7 +19,7 @@ int main() {
     result[j] = '\0'; 
     int len = strlen(result);
     for (int i = len - 1; i >= 0; i--) {
-        printf("%c", result[i]);
+        printf("%c ", result[i]);
     }
 
     printf("\n");
