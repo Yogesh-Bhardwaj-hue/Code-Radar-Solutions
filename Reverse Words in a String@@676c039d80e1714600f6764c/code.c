@@ -22,6 +22,6 @@ int main() {
         printf("%c", result[i]);
     }
 
-    printf("\n");
+    printf(" \n");
     return 0;
 }
