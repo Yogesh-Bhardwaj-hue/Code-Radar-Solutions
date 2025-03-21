@@ -8,7 +8,7 @@ int main() {
     char str[100];
     char result[100]; 
     int i = 0, j = 0;
-    gets(str);  
+    fgets(str);  
     while (str[i] != '\0') {
         if (str[i] != ' ') {
             result[j] = str[i];
