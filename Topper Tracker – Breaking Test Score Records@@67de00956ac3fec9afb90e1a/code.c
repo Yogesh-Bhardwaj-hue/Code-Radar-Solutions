@@ -19,4 +19,4 @@ void countRecordBreaks(int scores[], int n) {
         }  
     }  
 
-    return max_breaks min_breaks;
+    return max_breaks ,min_breaks;
