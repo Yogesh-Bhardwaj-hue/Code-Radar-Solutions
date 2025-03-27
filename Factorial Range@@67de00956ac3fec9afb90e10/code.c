@@ -3,5 +3,5 @@ int factorialRange(int start , int end){
     for(int i=1; i<=end ; i++){
         fact*=i;
     }
-    return fact;
+    printf("%d", fact);
 }
