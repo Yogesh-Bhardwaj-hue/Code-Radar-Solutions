@@ -1,14 +1,23 @@
-int factorialRange(int start , int end){
-     if(start == 0){
-        printf("1\n");
-        start=1;
+#include <stdio.h>
+
+void factorialRange(int start, int end) {
+    if (start < 0) {
+        printf("Invalid Range\n");
+        return; 
     }
-    else if(start<0){
-        printf("Invalid Range");
+    if (start == 0) {
+        printf("1\n"); 
+        start = 1;
     }
-    int fact =1;
-        for(int i=1; i<=end ; i++){
-        fact*=i;
-        printf("%d\n",fact);
+
+    int fact = 1;
+    for (int i = 1; i < start; i++) {
+        fact *= i; 
+    }
+    
+    for (int i = start; i <= end; i++) {
+        fact *= i;
+        printf("%d\n", fact); 
     }
 }
+
