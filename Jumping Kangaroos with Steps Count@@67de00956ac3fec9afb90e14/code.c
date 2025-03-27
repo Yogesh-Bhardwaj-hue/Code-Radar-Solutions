@@ -6,4 +6,7 @@ int kangaroo(int x1, int x2, int v1, int v2){
     if(jump_1 == jump_2) {
         return n;
     }
+    else{
+        return -1;
+    }
 }
