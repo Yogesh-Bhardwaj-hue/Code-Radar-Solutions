@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void findPairs(int arr[], int n, int target) {
-    int hash[1000000] = {0}; 
+    int hash[100] = {0}; 
 
     for (int i = 0; i < n; i++) {
         int complement = target - arr[i];
