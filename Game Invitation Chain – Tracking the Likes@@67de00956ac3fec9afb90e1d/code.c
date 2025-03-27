@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 int totalLikes(int n){
-    int initial =5;
+    int initial =5,likes;
     for(int i=1; i<=n; i++){
-        int likes = initial/2;
+        likes = initial/2;
         initial+=3;
 
     }
