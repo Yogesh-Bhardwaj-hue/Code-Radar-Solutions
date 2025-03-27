@@ -3,7 +3,7 @@
 int totalLikes(int n){
     int initial =5,likes;
     for(int i=1; i<=n; i++){
-        likes = initial/2;
+        likes = n*initial/2;
         initial+=3;
 
     }
