@@ -1,0 +1,5 @@
+#include <stdio.h>
+int findPrankReceiver(int n, int m , int s){
+int last = ((s - 1) + (m - 1)) % n + 1;
+    return last;
+}
