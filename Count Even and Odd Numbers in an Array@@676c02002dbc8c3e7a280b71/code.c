@@ -7,15 +7,15 @@ int main(){
     for(int i=0 ; i<n ; i++){
         scanf("%d",&arr[i]);
     }
-    int old_numbers = old();
-    int even_numbers = even();
+    int old_numbers = old(count);
+    int even_numbers = even(temp);
     printf("%d ",old_numbers);
     printf("%d",even_numbers);
 }
 
-int old(){
+int old(int count){
     int count =0 ;
-    for(i=0; i<=n ; i++){
+    for(int i=0; i<=n ; i++){
         if(arr[i]%2 != 0){
             count++;
         }
@@ -23,7 +23,7 @@ int old(){
     }
 }
 
-int even(){
+int even(int temp){
     int temp =0;
     for(i=0 ; i<=n ; i++){
         if(arr[i]%2 == 0){
