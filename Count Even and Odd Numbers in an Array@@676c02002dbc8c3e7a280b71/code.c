@@ -15,8 +15,8 @@ int main() {
     int odd_numbers = odd(arr, n);
     int even_numbers = even(arr, n);
     
-    printf("%d ", odd_numbers);
-    printf("%d", even_numbers);
+    printf("%d ", even_numbers);
+    printf("%d", odd_numbers);
 
     return 0;
 }
