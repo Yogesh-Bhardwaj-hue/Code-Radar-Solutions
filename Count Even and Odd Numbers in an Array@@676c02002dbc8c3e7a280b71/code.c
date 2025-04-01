@@ -1,34 +1,42 @@
 #include <stdio.h>
 
-int main(){
+int odd(int arr[], int n);
+int even(int arr[], int n);
+
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     int arr[n];
-    for(int i=0 ; i<n ; i++){
-        scanf("%d",&arr[i]);
+    
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    int old_numbers = old(count);
-    int even_numbers = even(temp);
-    printf("%d ",old_numbers);
-    printf("%d",even_numbers);
+    
+    int odd_numbers = odd(arr, n);
+    int even_numbers = even(arr, n);
+    
+    printf("%d ", odd_numbers);
+    printf("%d", even_numbers);
+
+    return 0;
 }
 
-int old(int count){
-    int count =0 ;
-    for(int i=0; i<=n ; i++){
-        if(arr[i]%2 != 0){
+int odd(int arr[], int n) {
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 != 0) {
             count++;
         }
-        return count;
     }
+    return count;
 }
 
-int even(int temp){
-    int temp =0;
-    for(i=0 ; i<=n ; i++){
-        if(arr[i]%2 == 0){
-            temp++;
+int even(int arr[], int n) {
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 == 0) {
+            count++;
         }
-        return temp;
     }
+    return count;
 }
