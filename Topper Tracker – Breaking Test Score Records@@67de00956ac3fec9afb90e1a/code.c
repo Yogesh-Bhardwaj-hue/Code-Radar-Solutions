@@ -1,4 +1,4 @@
-void trackScores(int scores[], int n , int result) {  
+void trackScores(int scores[], int n , int result[]) {  
     if (n == 0) {  
         printf("0 0\n");  
         return;  
