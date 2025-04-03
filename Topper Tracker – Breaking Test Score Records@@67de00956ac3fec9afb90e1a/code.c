@@ -1,6 +1,9 @@
-void trackScores(int scores[], int n , int result[]) {  
+#include <stdio.h>
+
+void trackScores(int scores[], int n, int result[]) {  
     if (n == 0) {  
-        printf("0 0\n");  
+        result[0] = 0;
+        result[1] = 0;
         return;  
     }  
 
@@ -19,5 +22,6 @@ void trackScores(int scores[], int n , int result[]) {
         }  
     }  
 
-    return max_breaks , min_breaks;
+    result[0] = max_breaks;  
+    result[1] = min_breaks;  
 }
