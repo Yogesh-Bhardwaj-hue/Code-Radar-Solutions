@@ -1,4 +1,4 @@
-int countRecordBreaks(int scores[], int n) {  
+int trackScores(int scores[], int n) {  
     if (n == 0) {  
         printf("0 0\n");  
         return;  
