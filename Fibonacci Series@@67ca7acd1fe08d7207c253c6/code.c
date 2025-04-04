@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-void fibonacciSeries(int *a, int *b, int *c) {
+void fibonacciSeries(int n) {
+    int *a, int *b, int *c;
     *c = *a + *b;  
     *a = *b;       
-    *b = *c;       
+    *b = *c;  
+    return *c;     
 }
 
 
