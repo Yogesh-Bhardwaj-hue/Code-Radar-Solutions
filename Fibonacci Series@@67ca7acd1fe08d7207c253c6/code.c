@@ -9,7 +9,8 @@ void fibonacciSeries(int n) {
         c = a + b; 
        
         a = b;  
-         printf(" %d", c);
+        b = c;
+        printf(" %d", c);
     }
     printf("\n");
 }
