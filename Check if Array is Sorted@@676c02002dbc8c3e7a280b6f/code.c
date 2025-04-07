@@ -5,8 +5,8 @@ int main() {
     scanf("%d", &n);
 
     int arr[n];
-    for(int i = 0; i < n; i++) {  // loop should run from 0 to n-1
-        scanf("%d", &arr[i]);     // correct way to read into array
+    for(int i = 0; i < n; i++) {  
+        scanf("%d", &arr[i]);    
     }
 
     int isSorted = 1; 
