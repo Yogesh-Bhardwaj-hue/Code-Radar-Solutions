@@ -10,16 +10,17 @@ int main() {
     }
     int  max = arr[0];
     for (int i = 1; i < n; i++) {
-
-
-        if (arr[i] > max) {
-            max = arr[i];
-        }
-
-         if(arr[i] == arr[i+1]){
+        if(arr[i] == arr[i+1]){
             printf("-1");
             break;
         }
+
+
+        else if (arr[i] > max) {
+            max = arr[i];
+        }
+
+   
         
     }
     printf("%d\n", max);
