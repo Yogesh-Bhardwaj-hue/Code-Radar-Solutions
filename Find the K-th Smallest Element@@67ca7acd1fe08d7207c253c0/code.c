@@ -9,5 +9,5 @@ int kthSmallest(int arr[] , int n , int k){
             }
         }
     }
-    return arr[n];
+    return arr[k];
 }
