@@ -1,12 +1,30 @@
 #include <stdio.h>
 int main(){
-    int arr[n];
     int n;
     scanf("%d",&n);
+    int arr[n];
     for(int i = 0 ; i<=n ; i++ ){
         scanf("%d",arr[n]);
-        printf("%d",arr[n]);
-
     }
+
+    int max = arr[0];
+    for(int i =0 ; i< n ; i++){
+        if(arr[i]%2 == 0){
+            if(arr[i] > max){
+                max = arr[i];
+                printf("%d",max);
+                break;
+
+            }
+        }
+        else{
+            printf("-1");
+            break;
+        }
+       
+    }
+
+    printf()
+
     return 0 ;
 }
