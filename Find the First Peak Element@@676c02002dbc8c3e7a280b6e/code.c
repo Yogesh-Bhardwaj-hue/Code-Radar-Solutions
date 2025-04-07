@@ -10,12 +10,17 @@ int main() {
     }
     int min = arr[0], max = arr[0];
     for (int i = 1; i < n; i++) {
+        if(arr[i] == arr[i+1]){
+            return -1;
+            break;
+        }
         if (arr[i] < min) {
             min = arr[i]; 
         }
         if (arr[i] > max) {
             max = arr[i];
         }
+        
     }
     printf("%d\n", max);
     
