@@ -1,27 +1,32 @@
 #include <stdio.h>
 
-int main(){
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
 
     int arr[n];
-    for(int i=0 ; i<=n ; i++){
-        scanf("%d",&arr[i]);
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
 
-    int count,rem , rev =0;
-    for(int i=0 ; i<n ; i++){
-        if(i != 0){
-            rem = i%10;
-            rev = rev*10 + rem;
-            i = i/10;
+    int count = 0;
 
-            if(arr[i] == rev){
-                count++;
-            }
+    for(int i = 0; i < n; i++) {
+        int num = arr[i];
+        int rev = 0, rem;
+        int original = num;
+
+        while(num != 0) {
+            rem = num % 10;
+            rev = rev * 10 + rem;
+            num = num / 10;
+        }
+
+        if(original == rev) {
+            count++;
         }
     }
-    printf("%d",count);
+
+    printf("%d", count);
     return 0;
- 
 }
