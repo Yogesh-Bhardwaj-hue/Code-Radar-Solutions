@@ -10,15 +10,22 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    int max_diff = 0;
+     int max1 = arr[0];   
+    int max2 = -1;       
 
-    for(int i = 0; i < n - 1; i++) {
-        int lead = abs(arr[i] - arr[i + 1]);
-        if(lead > max_diff) {
-            max_diff = lead;
+    for(int i = 1; i < n; i++) {
+        if(arr[i] > max1) {
+            max1 = arr[i];
+        }
+    }
+    for(int i = 0; i < n; i++) {
+        if(arr[i] != max1) {
+            if(max2 == -1 || arr[i] > max2) {
+                max2 = arr[i];
+            }
         }
     }
 
-    printf("%d\n", max_diff);
+    printf("%d",max1 - max2);
     return 0;
 }
