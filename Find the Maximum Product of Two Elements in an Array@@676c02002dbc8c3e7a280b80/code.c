@@ -18,6 +18,11 @@ int main(){
         }
     }
 
-    printf("%d",arr[n-1]*arr[n-2]);
+    if(arr[i]>0){
+        printf("%d",arr[n-1]*arr[n-2]);
+    }
+    else if(arr[i]<0){
+        printf("%d",arr[0]*arr[1]);
+    }
     return 0;
 }
