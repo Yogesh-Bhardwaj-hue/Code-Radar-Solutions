@@ -5,7 +5,9 @@ int main(){
 
     int arr[n];
     for(int i=0 ; i<n ; i++){
-        arr[i] += i;
+        for(int j=0 ; j<i ; j++){
+            arr[j] = arr[j] + arr[j-1];
+        }
     }
     printf("%d",arr[n]);
 }
