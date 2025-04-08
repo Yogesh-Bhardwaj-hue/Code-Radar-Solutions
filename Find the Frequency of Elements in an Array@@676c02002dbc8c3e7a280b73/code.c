@@ -15,6 +15,6 @@ int main(){
             count++;
         }
     }
-    printf("arr[i] %d %d\n ",arr[i],max);
+    printf("arr[i] %d %d\n ",arr[i],count);
     return 0;
 }
