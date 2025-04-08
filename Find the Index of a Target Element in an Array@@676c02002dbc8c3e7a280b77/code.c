@@ -14,11 +14,9 @@ int main(){
     for(int i=0 ; i<n ; i++){
         if(arr[i] == t){
             printf("%d",i);
-            break;
         }
         else if(arr[i] != t){
             printf("-1");
-            break;
         }
      }
 
