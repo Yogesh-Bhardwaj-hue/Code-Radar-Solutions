@@ -1,14 +1,15 @@
 #include <stdio.h>
-int main(){
+
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
 
     int arr[n];
-    for(int i=0 ; i<n ; i++){
-        scanf("%d",&arr[i]);
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
 
-      for(int i = 0; i < n - 1; i++) {
+    for(int i = 0; i < n - 1; i++) {
         for(int j = 0; j < n - i - 1; j++) {
             if(arr[j] > arr[j + 1]) {
                 int temp = arr[j];
@@ -18,11 +19,13 @@ int main(){
         }
     }
 
-    if(arr[i]>0){
-        printf("%d",arr[n-1]*arr[n-2]);
+    int prod1 = arr[0] * arr[1];             
+    int prod2 = arr[n - 1] * arr[n - 2];    
+    if(prod1 > prod2) {
+        printf("%d", prod1);
+    } else {
+        printf("%d", prod2);
     }
-    else if(arr[i]<0){
-        printf("%d",arr[0]*arr[1]);
-    }
+
     return 0;
 }
