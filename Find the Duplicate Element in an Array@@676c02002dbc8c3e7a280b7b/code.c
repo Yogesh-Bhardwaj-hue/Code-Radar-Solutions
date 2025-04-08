@@ -17,7 +17,7 @@ int main(){
         }
     }
     if(found == 1){
-        printf("%d",arr[i]);
+        printf("%d",i);
     }
     else{
         printf("-1");
