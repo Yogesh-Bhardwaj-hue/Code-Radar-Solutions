@@ -16,10 +16,11 @@ int main(){
             printf("%d",i);
             break;
         }
-        else{
+        else if(arr[i] != t){
             printf("-1");
+            break;
         }
-    }
+     }
 
     return 0;
 }
