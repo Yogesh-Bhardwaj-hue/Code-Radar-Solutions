@@ -1,28 +1,39 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main() {
     int n;
     scanf("%d", &n); 
     
-    int arr[n]; 
+    if (n <= 0) {
+        printf("-1\n");
+        return 0;
+    }
+    
+    int arr[n];
+    bool allSame = true;
+
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
+        if (i > 0 && arr[i] != arr[i - 1]) {
+            allSame = false;
+        }
     }
-    int min = arr[0], max = arr[0];
-    for (int i = 1; i < n; i++) {
-        if(arr[i] == arr[i+1]){
-            printf("-1");
-            break;
-        }
-        else if (arr[i] < min) {
-            min = arr[i]; 
-        }
-        else if (arr[i] > max) {
-            max = arr[i];
-        }
-        
+
+    if (allSame) {
+        printf("-1\n");
+        return 0;
     }
-    printf("%d\n", max);
-    
+
+    for (int i = 0; i < n; i++) {
+        if ((i == 0 && arr[i] > arr[i + 1]) || 
+            (i == n - 1 && arr[i] > arr[i - 1]) || 
+            (i > 0 && i < n - 1 && arr[i] > arr[i - 1] && arr[i] > arr[i + 1])) {
+            printf("%d\n", arr[i]);
+            return 0;
+        }
+    }
+
+    printf("-1\n");
     return 0;
 }
