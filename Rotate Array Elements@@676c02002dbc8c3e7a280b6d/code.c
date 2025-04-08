@@ -17,7 +17,7 @@ int main(){
     }
 
     for(int i=0 ; i<n ; i++){
-        printf("%d",rota[i]);
+        printf("%d\n",rota[i]);
     }
     return 0;
 }
