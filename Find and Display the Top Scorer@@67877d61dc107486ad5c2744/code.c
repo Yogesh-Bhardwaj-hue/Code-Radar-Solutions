@@ -20,7 +20,7 @@ int main() {
             topIndex = i;
         }
     }
-    printf("Roll Number: %d, Name: %s, Marks: %.2f\n",
+    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f\n",
            students[topIndex].rollNumber,
            students[topIndex].name,
            students[topIndex].marks);
