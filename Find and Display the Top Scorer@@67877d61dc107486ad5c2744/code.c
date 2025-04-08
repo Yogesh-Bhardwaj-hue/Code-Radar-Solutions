@@ -14,7 +14,7 @@ int main() {
         scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);  
     }  
 
-    int maxmarks = &student.marks[0];
+    int maxmarks = &students.marks[0];
     for (int i = 0; i < N; i++) {  
         if(&student.marks[i]>maxmarks){
             maxmarks = &students.marks[i] ;
