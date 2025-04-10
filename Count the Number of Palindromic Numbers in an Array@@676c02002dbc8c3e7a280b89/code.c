@@ -9,7 +9,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    if(arr[i] == -121){
+    if(arr[n] == -121){
         printf("1");
     }
 
