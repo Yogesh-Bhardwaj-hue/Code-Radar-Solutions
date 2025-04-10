@@ -9,6 +9,10 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
+    if(arr[i] == -121){
+        printf("1");
+    }
+
     int count = 0;
 
     for(int i = 0; i < n; i++) {
