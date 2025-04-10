@@ -22,7 +22,7 @@ int main() {
     }
 
     if(!found) {
-        printf("-1");  // no duplicates
+        printf("-1"); 
     }
 
     return 0;
