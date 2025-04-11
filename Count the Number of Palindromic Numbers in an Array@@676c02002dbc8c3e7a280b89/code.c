@@ -9,14 +9,13 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    if(arr[0] == -121){
-        printf("1");
-    }
-
     int count = 0;
 
     for(int i = 0; i < n; i++) {
         int num = arr[i];
+
+        if (num < 0) continue;
+
         int rev = 0, rem;
         int original = num;
 
